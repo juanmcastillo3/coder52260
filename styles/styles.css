@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+a:hover{
+    color: yellow;
+}
+
+li{
+    font-size: x-large;
+    color: #fafafa;
+    font-family: 'Sora', sans-serif;
+    display: contents;
+    flex-direction: row;
+}
+
+
+.menu{
+    display: inline-block;
+    flex-direction: row;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #dbe4ed;
+
+}
+
+.newsletter{
+    color: #fafafa;
+    font-family: 'Recursive', sans-serif;
+
+}
+
+.legalFooter{
+    color: #fafafa;
+    font-family: 'Recursive', sans-serif;
+    text-align: center;
+}
+
+.menuLogo{
+    width: 150px;
+    height: 150px;
+}
+
+.sucursales{
+    color: #fafafa;
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.redesSociales{
+    width: 50px;
+    margin: 50px;
+}
+
+.iframeMaps{
+    size-adjust: 100px 100px;
+}
+
+.historia{
+    color: #fafafa;
+    font-family: 'Recursive', sans-serif;
+}
+
+.historiaTitulo{
+    text-align: center;
+}
+
+.menuCarta{
+    color: #fafafa;
+    font-family: 'Anton', sans-serif;
+}
+
+.promociones{
+    color: #fafafa;
+    display: contents;
+    flex-direction: row;
+}
+
+.descripcionCupon{
+    font-family: 'Anton', sans-serif;
+}
+
+.fotoCupon{
+    width: 400px;
+    height: 400px;
+}
+
+.news{
+    color: #fafafa;
+    font-family: 'Anton', sans-serif;
+}
+
+.contacto{
+    color: #fafafa;
+    font-family: 'Ubuntu', sans-serif;
+}
