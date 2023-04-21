@@ -155,6 +155,8 @@ img{
 }
 
 .imagenHistoria{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,6 +218,12 @@ img{
 
 }
 
+.imagenContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Responsive Breakpoints = Bootstrap*/
 
@@ -244,6 +252,7 @@ img{
     .footer__redesSociales{
         display: flex;
         justify-content: center;
+        align-items: end;
     }
 
     .footerLogo{
@@ -258,6 +267,9 @@ img{
         align-self: center;
       }
 
+      .historia{
+        display: block;
+      }
 }
 
 
@@ -295,6 +307,14 @@ img{
     .footer__redesSociales{
         align-content: center;
         justify-content: center;
+    }
+    
+    .contacto{
+        display: block;
+    }
+
+    .imagenContacto{
+        margin-top: 25px;
     }
 }
 
@@ -342,6 +362,14 @@ img{
 
     .footer .footer__newsletter .footer__logoFooter{
         display: none;
+    }
+    
+    .contacto{
+        display: block;
+    }
+
+    .imagenContacto{
+        margin-top: 25px;
     }
 
     }

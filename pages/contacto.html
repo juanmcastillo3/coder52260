@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link
       rel="shortcut icon"
-      href="images/jaBarScriptLogo.png"
+      href="../images/jaBarScriptLogo.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,30 +18,48 @@
     <title>JaBarScript</title>
 </head>
 <body class="container-fluid">
-  <section class="menuNavegador row col 12">
-    <div id="logoNavegador" class="logoNavegador">
-      <a href="index.html"><img src="../images/jaBarScriptLogo.png" alt="logo" class="menuLogo"/></a>
-    </div>
-    <div id="itemsDelMenuNavegador" class="itemsDelMenuNavegado row col 12">
-      <ul id="menuLista" class="menuLista row col 12">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="novedades.html">Novedades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-  </section>
+  <div class="contenedorTotal">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="../images/jaBarScriptLogo.png" alt="logoNavegador"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a><img  class="navbar-toggler-icon" src="../images/menu_list.png" alt="menuList"></a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <section class="contacto">
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Apellido y nombre</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@correo.com">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+          <label for="exampleFormControlInput1" class="form-label">Apellido y nombre</label>
+          <input class="form-control form-control-lg" type="text" placeholder="Ingrese nombre" aria-label=".form-control-lg example">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
@@ -53,6 +71,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
+      <div class="imagenContacto">
+        <img src="../images/contacto.png" alt="imagen contacto">
+      </div>
     </div>
     </section>
     <footer class="footer row">
