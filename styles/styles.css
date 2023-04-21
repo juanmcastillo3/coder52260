@@ -1,3 +1,5 @@
+/* Generales */
+
 body{
     background-color: black;
 }
@@ -14,29 +16,87 @@ a:hover{
 li{
     font-size: x-large;
     color: #fafafa;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Righteous', cursive;
     display: contents;
     flex-direction: row;
 }
 
 
-.menu{
-    display: inline-block;
-    flex-direction: row;
-}
+/* Navegador */
 
-.slide{
-    display: flex;
+.menuLista{
+    list-style: none;
+    justify-content: space-between;
+    padding: 25px;
     align-items: center;
-    justify-content: center;
-    border: 3px solid #dbe4ed;
-
 }
 
-.newsletter{
+.menuNavegador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.logoNavegador{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.itemsDelMenuNavegador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+/* Body */
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}
+
+.sucursales{
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iframeMaps{
+    size-adjust: 100px 100px;
+}
+
+/* footer */
+
+.footer__newsletter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);;
+    grid-template-areas:
+        "footerLogo texto1"
+        "footerLogo texto2"
+        "footerLogo iconosRedes";
+}
+
+.footer__text{
+    display: flex;
     color: #fafafa;
     font-family: 'Recursive', sans-serif;
-
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 .legalFooter{
@@ -45,38 +105,67 @@ li{
     text-align: center;
 }
 
-.menuLogo{
-    width: 150px;
-    height: 150px;
+.footerLogo{
+    width: 400px;
+    height: 400px;
 }
 
-.sucursales{
-    color: #fafafa;
+.footer__logoFooter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.footer__redesSociales{
+    display: flex;
+
+}
+
+.iconosRedes{
+    display: flex;
+    justify-items: flex-end;
+    align-items:center;
+}
+
+.iconoRed{
+    margin: 50px;
+    width: 50px;
+    display: flex;
+    align-content: center;
     
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-.redesSociales{
-    width: 50px;
-    margin: 50px;
-}
-
-.iframeMaps{
-    size-adjust: 100px 100px;
-}
+/* NOSOTROS */
 
 .historia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat( 3, 1fr);
     color: #fafafa;
     font-family: 'Recursive', sans-serif;
+    text-align: justify;
+}
+
+.imagenHistoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textoHistoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 .historiaTitulo{
     text-align: center;
+    color: #fafafa;
+    font-family: 'Anton', sans-serif;
 }
 
 .menuCarta{
@@ -104,7 +193,12 @@ img{
     font-family: 'Anton', sans-serif;
 }
 
+/* CONTACTO */
+
 .contacto{
     color: #fafafa;
     font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
