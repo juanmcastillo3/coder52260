@@ -1,16 +1,55 @@
 /* Generales */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+}
+
+/* NAVBAR */
+
+nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.navbar{
+    background-color: black !important;
+}
+
+
+.container-fluid header nav ul li a{
+    color: #fafafa !important;
+}
+
+.container-fluid header nav ul li a:hover{
+    color: #e9af0e !important;
+}
+
+.navbar-brand{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+
 body{
     background-color: black;
+}
+
+section{
+    padding: 10px;
 }
 
 a{
     text-decoration: none;
     color: #fafafa;
-}
-
-a:hover{
-    color: yellow;
 }
 
 li{
@@ -21,41 +60,7 @@ li{
     flex-direction: row;
 }
 
-
-/* Navegador */
-
-.menuLista{
-    list-style: none;
-    justify-content: space-between;
-    padding: 25px;
-    align-items: center;
-}
-
-.menuNavegador{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-}
-
-.logoNavegador{
-    width: 100px;
-    height: 100px;
-    align-items: center;
-}
-
-.itemsDelMenuNavegador{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
 /* Body */
-
 .contenido{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -103,11 +108,12 @@ img{
     color: #fafafa;
     font-family: 'Recursive', sans-serif;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .footerLogo{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .footer__logoFooter{
@@ -168,11 +174,16 @@ img{
     font-family: 'Anton', sans-serif;
 }
 
+
+/* MENU */
+
 .menuCarta{
     color: #fafafa;
     font-family: 'Anton', sans-serif;
 }
 
+
+/* PROMOCIONES */
 .promociones{
     color: #fafafa;
     display: contents;
@@ -188,6 +199,8 @@ img{
     height: 400px;
 }
 
+/* NOVEDADES */
+
 .news{
     color: #fafafa;
     font-family: 'Anton', sans-serif;
@@ -202,3 +215,133 @@ img{
     grid-template-columns: repeat(2, 1fr);
 
 }
+
+
+/* Responsive Breakpoints = Bootstrap*/
+
+
+/* Large */
+
+@media screen and (max-width: 992px){
+
+    .footer__newsletter{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        text-align: justify;
+        grid-template-areas:
+        "a b"
+        "c d"
+        ;
+    }
+
+    .footer__logoFooter{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+       
+    }
+
+    .footer__redesSociales{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerLogo{
+        width: 300px;
+        height: 300px; 
+    }
+
+    .footer__redesSociales {
+        grid-column-start: c;
+	    grid-column-end: d;
+        grid-area: c,d;
+        align-self: center;
+      }
+
+}
+
+
+
+/* Medium */
+
+@media screen and (max-width: 768px){
+
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+
+        }
+        
+    .sucursales .descripcionLocales{
+        display: block;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        }
+    
+    .form-select{
+        margin: 20px;
+    }
+
+    
+    .footer__newsletter{
+        display: block;
+
+    }
+
+    .footer__logoFooter{
+        display: none;
+    }
+    
+    .footer__redesSociales{
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+
+/*Small */
+
+@media screen and  (max-width:576px) {
+
+
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+
+        }
+        
+    .sucursales .descripcionLocales{
+        display: block;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        }
+    
+    .form-select{
+        margin: 20px;
+    }
+
+    .iframeMaps row{
+        display: block;
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .maps{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+    }
+    
+    .footer .footer__newsletter{
+        display: block;
+    }
+
+    .footer .footer__newsletter .footer__logoFooter{
+        display: none;
+    }
+
+    }
