@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+}
+
+/* NAVBAR */
+nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+nav navbar {
+  background-color: black !important;
+}
+
+container-fluid header nav ul li a {
+  color: #fafafa !important;
+}
+container-fluid header nav ul li a:hover {
+  color: #e9af0e !important;
+}
+
+navbar-brand {
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOME */
+body {
+  background-color: black;
+}
+body contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+}
+body contenido sucursales {
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body contenido sucursales section {
+  padding: 10px;
+}
+body contenido sucursales section a {
+  text-decoration: none;
+  color: #fafafa;
+}
+body contenido sucursales section a li {
+  font-size: x-large;
+  color: #fafafa;
+  font-family: "Righteous", cursive;
+  display: contents;
+  flex-direction: row;
+}
+body contenido sucursales section a li sucursales {
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body contenido sucursales section a li sucursales img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body contenido sucursales section a li sucursales img iframeMaps {
+  size-adjust: 100px 100px;
+}
+
+footer footer__newsletter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "footerLogo texto1" "footerLogo texto2" "footerLogo iconosRedes";
+}
+footer footer__newsletter footer__text {
+  display: flex;
+  color: #fafafa;
+  font-family: "Recursive", sans-serif;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+footer footer__newsletter footer__text legalFooter {
+  color: #fafafa;
+  font-family: "Recursive", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer footer__newsletter footer__text legalFooter footerLogo {
+  width: 300px;
+  height: 300px;
+}
+footer footer__newsletter footer__text legalFooter footerLogo footer__logoFooter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+footer footer__newsletter footer__text legalFooter footerLogo footer__logoFooter footer__redesSociales {
+  display: flex;
+}
+footer footer__newsletter footer__text legalFooter footerLogo footer__logoFooter footer__redesSociales iconosRedes {
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+/* NOSOTROS */
+historiaContenido historia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #fafafa;
+  font-family: "Recursive", sans-serif;
+  text-align: justify;
+}
+historiaContenido historia imagenHistoria {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+historiaContenido historia imagenHistoria textoHistoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+historiaContenido historia imagenHistoria textoHistoria historiaTitulo {
+  text-align: center;
+  color: #fafafa;
+  font-family: "Anton", sans-serif;
+}
+
+/* MENU */
+menuCarta {
+  color: #fafafa;
+  font-family: "Anton", sans-serif;
+}
+
+/* PROMOCIONES */
+promociones {
+  color: #fafafa;
+  display: contents;
+  flex-direction: row;
+}
+promociones descripcionCupon {
+  font-family: "Anton", sans-serif;
+}
+promociones descripcionCupon fotoCupon {
+  width: 400px;
+  height: 400px;
+}
+
+/* NOVEDADES */
+news {
+  color: #fafafa;
+  font-family: "Anton", sans-serif;
+}
+
+/* CONTACTO */
+contacto {
+  color: #fafafa;
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+contacto imagenContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

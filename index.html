@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- Agrego link de styles -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="shortcut icon"
       href="images/jaBarScriptLogo.png"
@@ -28,58 +28,114 @@
   </head>
   <body class="container-fluid">
     <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="/images/jaBarScriptLogo.png" alt="logoNavegador"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <a><img  class="navbar-toggler-icon" src="images/menu_list.png" alt="menuList"></a>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/novedades.html">Novedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="/images/jaBarScriptLogo.png" alt="logoNavegador"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <a
+              ><img
+                class="navbar-toggler-icon"
+                src="images/menu_list.png"
+                alt="menuList"
+            /></a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/novedades.html"
+                  >Novedades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
     <section class="slide row col 12">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/slide1.png" class="d-block w-100" alt="slide1">
+            <img src="images/slide1.png" class="d-block w-100" alt="slide1" />
           </div>
           <div class="carousel-item">
-            <img src="images/slide2.jpg" class="d-block w-100" alt="slide2">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="slide2" />
           </div>
           <div class="carousel-item">
-            <img src="images/slide3.png" class="d-block w-100" alt="slide3">
+            <img src="images/slide3.png" class="d-block w-100" alt="slide3" />
           </div>
           <div class="carousel-item">
-            <img src="images/slide4.jpg" class="d-block w-100" alt="slide4">
+            <img src="images/slide4.jpg" class="d-block w-100" alt="slide4" />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
@@ -92,8 +148,8 @@
           <p>Conocé todos nuestros locales</p>
         </div>
         <select class="form-select" size="8" aria-label="size 8 select example">
-          <option selected>Villa Devoto: Cnel. Ramón Lista 5020 </option>
-          <option value="1">San Pedro: Crucero General Belgrano 1355 </option>
+          <option selected>Villa Devoto: Cnel. Ramón Lista 5020</option>
+          <option value="1">San Pedro: Crucero General Belgrano 1355</option>
           <option value="2">Puerto Madryn: Av. Uruguay 5190</option>
           <option value="3">Puerto Madero: Pierina Dealessi 1340</option>
           <option value="4">San Telmo: Arrieta 1083</option>
@@ -107,7 +163,8 @@
         </select>
       </div>
       <div class="iframeMaps row">
-        <iframe class="maps"
+        <iframe
+          class="maps"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.828421731152!2d-58.5206184!3d-34.6115672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb73c232fbc81%3A0xe9fe85fa85b8f7f3!2sLa%20Birra%20Bar%20Devoto!5e0!3m2!1ses!2sar!4v1679882654787!5m2!1ses!2sar"
           width="600"
           height="450"
@@ -128,15 +185,32 @@
           />
         </div>
         <div class="footer__text row">
-          <p class="texto1">Seguinos y disfrutá de todos nuestros beneficios.</p>
-          <p class="texto2"> Suscribite a nuestro newsletter y recibí las últimas novedades, promociones, y descuentos.</p>
+          <p class="texto1">
+            Seguinos y disfrutá de todos nuestros beneficios.
+          </p>
+          <p class="texto2">
+            Suscribite a nuestro newsletter y recibí las últimas novedades,
+            promociones, y descuentos.
+          </p>
         </div>
         <div class="footer__redesSociales">
           <div class="iconosRedes">
-          <div class="iconoRed"><a href=""><img src="images/facebook.png" alt="facebookLogo" /></a></div>
-          <div class="iconoRed"><a href=""><img src="images/instagram.png" alt="instagramLogo" /></a></div>
-          <div class="iconoRed"><a href="iconoRed"><img src="images/tik-tok.png" alt="tikTokLogo" /></a></div>
-        </div>
+            <div class="iconoRed">
+              <a href=""
+                ><img src="images/facebook.png" alt="facebookLogo"
+              /></a>
+            </div>
+            <div class="iconoRed">
+              <a href=""
+                ><img src="images/instagram.png" alt="instagramLogo"
+              /></a>
+            </div>
+            <div class="iconoRed">
+              <a href="iconoRed"
+                ><img src="images/tik-tok.png" alt="tikTokLogo"
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
       <div class="legalFooter">
