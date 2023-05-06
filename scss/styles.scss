@@ -1,5 +1,6 @@
 $color_1: #fafafa;
 $color_2: #e9af0e;
+$color_3: white;
 $font-family_1: "Righteous", cursive;
 $font-family_2: "Recursive", sans-serif;
 $font-family_3: "Anton", sans-serif;
@@ -7,287 +8,464 @@ $font-family_4: "Ubuntu", sans-serif;
 $background-color_1: black;
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 header {
-  width: 100%;
-  background-color: $background-color_1;
+	width: 100%;
+	background-color: $background-color_1;
 }
 nav {
-  width: 90%;
-  max-width: 1000px;
-  margin: 20px auto;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
 }
 .navbar {
-  background-color: $background-color_1 !important;
+	background-color: $background-color_1 !important;
 }
 .container-fluid {
-  header {
-    nav {
-      ul {
-        li {
-          a {
-            color: $color_1 !important;
-            &:hover {
-              color: $color_2 !important;
-            }
-          }
-        }
-      }
-    }
-  }
+	header {
+		nav {
+			ul {
+				li {
+					a {
+						color: $color_1 !important;
+						&:hover {
+							color: $color_2 !important;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 .navbar-brand {
-  width: 150px;
-  height: 150px;
-  align-items: center;
-  justify-content: center;
+	width: 150px;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
 }
 body {
-  background-color: $background-color_1;
+	background-color: $background-color_1;
 }
 section {
-  padding: 10px;
+	padding: 10px;
 }
 a {
-  text-decoration: none;
-  color: $color_1;
+	text-decoration: none;
+	color: $color_1;
 }
 li {
-  font-size: x-large;
-  color: $color_1;
-  font-family: $font-family_1;
-  display: contents;
-  flex-direction: row;
+	font-size: x-large;
+	color: $color_1;
+	font-family: $font-family_1;
+	display: contents;
+	flex-direction: row;
 }
-
 .contenido {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 50px;
 }
 .sucursales {
-  color: $color_1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+	color: $color_1;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 img {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .iframeMaps {
-  size-adjust: 100px 100px;
+	size-adjust: 100px 100px;
 }
 .footer__newsletter {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: "footerLogo texto1" "footerLogo texto2" "footerLogo iconosRedes";
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-areas: "footerLogo texto1" "footerLogo texto2" "footerLogo iconosRedes";
 }
 .footer__text {
-  display: flex;
-  color: $color_1;
-  font-family: $font-family_2;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+	display: flex;
+	color: $color_1;
+	font-family: $font-family_2;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
 }
 .legalFooter {
-  color: $color_1;
-  font-family: $font-family_2;
-  text-align: center;
-  margin-bottom: 15px;
+	color: $color_1;
+	font-family: $font-family_2;
+	text-align: center;
+	margin-bottom: 15px;
 }
 .footerLogo {
-  width: 300px;
-  height: 300px;
+	width: 300px;
+	height: 300px;
 }
 .footer__logoFooter {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 .footer__redesSociales {
-  display: flex;
+	display: flex;
 }
 .iconosRedes {
-  display: flex;
-  justify-items: flex-end;
-  align-items: center;
+	display: flex;
+	justify-items: flex-end;
+	align-items: center;
 }
 .iconoRed {
-  margin: 50px;
-  width: 50px;
-  display: flex;
-  align-content: center;
-  &:hover {
-    transform: scale(1.2)
-  }
+	margin: 50px;
+	width: 50px;
+	display: flex;
+	align-content: center;
+	&:hover {
+		transform: scale(1.2);
+	}
 }
-
 .historia {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  color: $color_1;
-  font-family: $font-family_2;
-  text-align: justify;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	color: $color_1;
+	font-family: $font-family_2;
+	text-align: justify;
 }
-.imagenHistoria {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+.imagenHistoria1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.imagenHistoria2 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.imagenHistoria3 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
 }
 .textoHistoria {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+.textoHistoria1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+.textoHistoria2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+.textoHistoria3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
 }
 .historiaTitulo {
-  text-align: center;
-  color: $color_1;
-  font-family: $font-family_3;
+	text-align: center;
+	color: $color_1;
+	font-family: $font-family_3;
 }
 .menuCarta {
-  color: $color_1;
-  font-family: $font-family_3;
+	display: inline-block;
+	color: $color_1;
+	font-family: $font-family_3;
+	.seleccionador {
+		color: $color_1;
+		font-family: $font-family_2;
+		overflow: hidden;
+		display: block;
+		color: $color_1;
+		text-align: center;
+		padding: 14px 16px;
+		ul {
+			span {
+				display: inline-block;
+				color: $color_3;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				justify-content: space-between;
+				a {
+					&:hover {
+						color: $color_2;
+					}
+				}
+			}
+		}
+	}
+}
+.producto {
+	display: block;
+	margin: 100px;
+	.fotoProducto {
+		display: flex;
+		justify-content: center;
+	}
+}
+.detalleProducto {
+	.nombreProducto {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+.descripcionProducto {
+	width: 50%;
+	margin: 0 auto;
+	padding: auto;
+	text-align: center;
+}
+.buttonUp {
+	position: fixed;
+	width: 75px;
+	height: 75px;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 1;
 }
 .promociones {
-  color: $color_1;
-  display: contents;
-  flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	color: $color_1;
+	font-family: $font-family_3;
+	text-align: justify;
+	margin: auto;
+	grid-template-areas: "fotoCupon1 cupon1" "fotoCupon2 cupon2";
 }
-.descripcionCupon {
-  font-family: $font-family_3;
+.fotoCupon1 {
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
 }
-.fotoCupon {
-  width: 400px;
-  height: 400px;
+.cupon1 {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+.fotoCupon2 {
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.cupon2 {
+	display: block;
+	text-align: center;
+	margin: auto;
 }
 .news {
-  color: $color_1;
-  font-family: $font-family_3;
+	color: $color_1;
+	font-family: $font-family_3;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	color: $color_1;
+	text-align: justify;
+	margin: auto;
+}
+.fotoNew {
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.descripcionNew {
+	display: block;
+	text-align: center;
+	margin: auto;
 }
 .contacto {
-  color: $color_1;
-  font-family: $font-family_4;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+	color: $color_1;
+	font-family: $font-family_4;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 .imagenContacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 @media screen and (max-width: 992px) {
-  .footer__newsletter {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
-    text-align: justify;
-    grid-template-areas: "a b" "c d";
-  }
-  .footer__logoFooter {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-  .footer__redesSociales {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    grid-column-start: c;
-    grid-column-end: d;
-    grid-area: c, d;
-    align-self: center;
-  }
-  .footerLogo {
-    width: 300px;
-    height: 300px;
-  }
-  .historia {
-    display: block;
-  }
+	.footer__newsletter {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 0.5fr);
+		text-align: justify;
+		grid-template-areas: "a b" "c d";
+	}
+	.footer__logoFooter {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	.footer__redesSociales {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		grid-column-start: c;
+		grid-column-end: d;
+		grid-area: c, d;
+		align-self: center;
+	}
+	.footerLogo {
+		width: 300px;
+		height: 300px;
+	}
+	.historia {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.textoHistoria1 {
+		order: 1;
+	}
+	.imagenHistoria1 {
+		order: 2;
+	}
+	.textoHistoria2 {
+		order: 3;
+	}
+	.imagenHistoria2 {
+		order: 4;
+		max-width: 100%;
+		object-fit: cover;
+	}
+	.textoHistoria3 {
+		order: 5;
+	}
+	.imagenHistoria3 {
+		order: 6;
+	}
 }
 @media screen and (max-width: 768px) {
-  .contenido {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .sucursales {
-    .descripcionLocales {
-      display: block;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-    }
-  }
-  .form-select {
-    margin: 20px;
-  }
-  .footer__newsletter {
-    display: block;
-  }
-  .footer__logoFooter {
-    display: none;
-  }
-  .footer__redesSociales {
-    align-content: center;
-    justify-content: center;
-  }
-  .contacto {
-    display: block;
-  }
-  .imagenContacto {
-    margin-top: 25px;
-  }
+	.contenido {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.sucursales {
+		.descripcionLocales {
+			display: block;
+			align-items: center;
+			align-content: center;
+			text-align: center;
+		}
+	}
+	.form-select {
+		margin: 20px;
+	}
+	.footer__newsletter {
+		display: block;
+	}
+	.footer__logoFooter {
+		display: none;
+	}
+	.footer__redesSociales {
+		align-content: center;
+		justify-content: center;
+	}
+	.contacto {
+		display: block;
+	}
+	.imagenContacto {
+		margin-top: 25px;
+	}
+	.promociones {
+		display: block;
+	}
+	.fotoCupon1 {
+		margin: 25px;
+	}
+	.cupon1 {
+		margin: 25px;
+	}
+	.fotoCupon2 {
+		margin: 25px;
+	}
+	.cupon2 {
+		margin: 25px;
+	}
+	.news {
+		display: block;
+	}
+	.fotoNew {
+		margin: 25px;
+	}
+	.descripcionNew {
+		margin: 25px;
+	}
 }
 @media screen and (max-width: 576px) {
-  .contenido {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .sucursales {
-    .descripcionLocales {
-      display: block;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-    }
-  }
-  .form-select {
-    margin: 20px;
-  }
-  .iframeMaps {
-    row {
-      display: block;
-      overflow: hidden;
-      padding-bottom: 56.25%;
-      position: relative;
-      height: 0;
-    }
-  }
-  .maps {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .footer {
-    .footer__newsletter {
-      display: block;
-      .footer__logoFooter {
-        display: none;
-      }
-    }
-  }
-  .contacto {
-    display: block;
-  }
-  .imagenContacto {
-    margin-top: 25px;
-  }
+	.contenido {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.sucursales {
+		.descripcionLocales {
+			display: block;
+			align-items: center;
+			align-content: center;
+			text-align: center;
+		}
+	}
+	.form-select {
+		margin: 20px;
+	}
+	.iframeMaps {
+		row {
+			display: block;
+			overflow: hidden;
+			padding-bottom: 56.25%;
+			position: relative;
+			height: 0;
+		}
+	}
+	.maps {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
+	.footer {
+		.footer__newsletter {
+			display: block;
+			.footer__logoFooter {
+				display: none;
+			}
+		}
+	}
+	.contacto {
+		display: block;
+	}
+	.imagenContacto {
+		margin-top: 25px;
+	}
 }

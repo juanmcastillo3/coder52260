@@ -138,7 +138,25 @@ img {
   text-align: justify;
 }
 
-.imagenHistoria {
+.imagenHistoria1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imagenHistoria2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imagenHistoria3 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -154,6 +172,27 @@ img {
   margin: 20px;
 }
 
+.textoHistoria1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.textoHistoria2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.textoHistoria3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
 .historiaTitulo {
   text-align: center;
   color: #fafafa;
@@ -161,28 +200,128 @@ img {
 }
 
 .menuCarta {
+  display: inline-block;
   color: #fafafa;
   font-family: "Anton", sans-serif;
+}
+.menuCarta .seleccionador {
+  color: #fafafa;
+  font-family: "Recursive", sans-serif;
+  overflow: hidden;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px 16px;
+}
+.menuCarta .seleccionador ul span {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.menuCarta .seleccionador ul span a:hover {
+  color: #e9af0e;
+}
+
+.producto {
+  display: block;
+  margin: 100px;
+}
+.producto .fotoProducto {
+  display: flex;
+  justify-content: center;
+}
+
+.detalleProducto .nombreProducto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.descripcionProducto {
+  width: 50%;
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}
+
+.buttonUp {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
 }
 
 .promociones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   color: #fafafa;
-  display: contents;
-  flex-direction: row;
-}
-
-.descripcionCupon {
   font-family: "Anton", sans-serif;
+  text-align: justify;
+  margin: auto;
+  grid-template-areas: "fotoCupon1 cupon1" "fotoCupon2 cupon2";
 }
 
-.fotoCupon {
-  width: 400px;
-  height: 400px;
+.fotoCupon1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.cupon1 {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.fotoCupon2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.cupon2 {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 .news {
   color: #fafafa;
   font-family: "Anton", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: #fafafa;
+  text-align: justify;
+  margin: auto;
+}
+
+.fotoNew {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.descripcionNew {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 .contacto {
@@ -224,7 +363,30 @@ img {
     height: 300px;
   }
   .historia {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .textoHistoria1 {
+    order: 1;
+  }
+  .imagenHistoria1 {
+    order: 2;
+  }
+  .textoHistoria2 {
+    order: 3;
+  }
+  .imagenHistoria2 {
+    order: 4;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .textoHistoria3 {
+    order: 5;
+  }
+  .imagenHistoria3 {
+    order: 6;
   }
 }
 @media screen and (max-width: 768px) {
@@ -255,6 +417,30 @@ img {
   }
   .imagenContacto {
     margin-top: 25px;
+  }
+  .promociones {
+    display: block;
+  }
+  .fotoCupon1 {
+    margin: 25px;
+  }
+  .cupon1 {
+    margin: 25px;
+  }
+  .fotoCupon2 {
+    margin: 25px;
+  }
+  .cupon2 {
+    margin: 25px;
+  }
+  .news {
+    display: block;
+  }
+  .fotoNew {
+    margin: 25px;
+  }
+  .descripcionNew {
+    margin: 25px;
   }
 }
 @media screen and (max-width: 576px) {
