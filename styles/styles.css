@@ -22,6 +22,11 @@ nav {
   background-color: black !important;
 }
 
+#navbarNav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .container-fluid header nav ul li a {
   color: #fafafa !important;
 }
@@ -31,8 +36,8 @@ nav {
 }
 
 .navbar-brand {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   align-items: center;
   justify-content: center;
 }
@@ -41,13 +46,13 @@ body {
   background-color: black;
 }
 
-section {
-  padding: 10px;
-}
-
 a {
   text-decoration: none;
   color: #fafafa;
+}
+
+h2 {
+  text-align: center;
 }
 
 li {
@@ -56,6 +61,12 @@ li {
   font-family: "Righteous", cursive;
   display: contents;
   flex-direction: row;
+}
+
+h2 {
+  color: #fafafa;
+  font-family: "Righteous", cursive;
+  font-size: xx-large;
 }
 
 /* Body */
@@ -179,13 +190,6 @@ img {
   margin: 10px;
 }
 
-.textoHistoria {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-
 .textoHistoria1 {
   display: flex;
   align-items: center;
@@ -244,14 +248,40 @@ img {
   color: #e9af0e;
 }
 
+.categoriaProducto {
+  margin: 50px;
+}
+
+.contenedorHambuguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.contenedorEnsaladas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedorAcompañamientos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .producto {
-  display: block;
-  margin: 100px;
+  margin: 20px;
 }
 
 .producto .fotoProducto {
   display: flex;
   justify-content: center;
+}
+
+.producto .fotoProducto:hover {
+  display: flex;
+  justify-content: center;
+  transform: scale(1.2);
 }
 
 .detalleProducto .nombreProducto {
@@ -262,10 +292,11 @@ img {
 }
 
 .descripcionProducto {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: auto;
   text-align: center;
+  font-family: "Sanchez", serif;
 }
 
 .buttonUp {
@@ -322,32 +353,86 @@ img {
   margin: auto;
 }
 
+.descripcionPromocion {
+  font-family: "Sanchez", serif;
+}
+
 /* NOVEDADES */
 
 .news {
-  color: #fafafa;
-  font-family: "Anton", sans-serif;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  color: #fafafa;
-  text-align: justify;
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloNovedades {
+  display: block;
+  max-width: 750px;
   margin: auto;
+}
+
+.news h1 {
+  display: block;
+  font-family: "Russo One", sans-serif;
+  color: #fafafa;
+  margin: 100px;
+  text-align: center;
+}
+
+.contendedorNovedades {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.novedad {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-top: 1px solid #5b5b5b;
+  padding: 20px 0 15px;
 }
 
 .fotoNew {
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.descripcionNew {
-  display: block;
-  text-align: center;
-  margin: auto;
+.new_descripcion {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  padding: 0 0 0 30px;
+}
+
+.new_titulo {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 32px;
+  width: 405px;
+  height: auto;
+  text-align: left;
+  color: #fafafa;
+  display: inline-block;
+}
+
+.new_bajada {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 15px;
+  width: 450px;
+  height: auto;
+  text-align: left;
+  color: #a4a4a4;
+  margin: 10px 0 15px;
 }
 
 /* CONTACTO */
@@ -361,8 +446,10 @@ img {
 
 .imagenContacto {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: auto;
+  height: auto;
 }
 
 /* Responsive Breakpoints = Bootstrap*/
@@ -429,6 +516,37 @@ img {
   .imagenHistoria3 {
     order: 6;
   }
+
+  .novedad {
+    display: block;
+    text-align: center;
+  }
+
+  .fotoNew {
+    margin: 25px;
+  }
+
+  .new_descripcion {
+    width: auto;
+    justify-content: center;
+  }
+
+  .new_titulo {
+    width: auto;
+  }
+
+  .new_bajada {
+    width: auto;
+  }
+
+  .contacto {
+    display: block;
+  }
+
+  .imagenContacto {
+    display: block;
+    margin: 50px
+  }
 }
 
 /* Medium */
@@ -466,10 +584,6 @@ img {
     display: block;
   }
 
-  .imagenContacto {
-    margin-top: 25px;
-  }
-
   .promociones {
     display: block;
   }
@@ -489,18 +603,26 @@ img {
     margin: 25px;
   }
 
-  .news{
+  .news {
     display: block;
   }
 
-  .fotoNew{
+  .fotoNew {
     margin: 25px;
   }
 
-  .descripcionNew{
+  .descripcionNew {
     margin: 25px;
   }
 
+  .producto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 /*Small */
@@ -536,6 +658,10 @@ img {
     width: 100%;
   }
 
+  .footer {
+    margin-top: 50px;
+  }
+
   .footer .footer__newsletter {
     display: block;
   }
@@ -549,6 +675,23 @@ img {
   }
 
   .imagenContacto {
-    margin-top: 25px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .producto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contenedorHambuguesas {
+    display: block;
+  }
+  .contenedorEnsaladas {
+    display: block;
+  }
+
+  .contenedorAcompañamientos {
+    display: block;
   }
 }
