@@ -454,6 +454,10 @@ img {
   margin-right: 25px;
 }
 
+.button .btn .btn-primary {
+  background: #e9af0e !important;
+}
+
 /* Responsive Breakpoints = Bootstrap*/
 
 /* Large */
