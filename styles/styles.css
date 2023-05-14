@@ -444,12 +444,14 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.formulario{
+  margin: 25px;
+}
+
 .imagenContacto {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
-  width: auto;
-  height: auto;
 }
 
 /* Responsive Breakpoints = Bootstrap*/
@@ -545,7 +547,7 @@ img {
 
   .imagenContacto {
     display: block;
-    margin: 50px
+    text-align: center;
   }
 }
 
